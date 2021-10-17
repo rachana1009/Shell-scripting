@@ -58,10 +58,26 @@ fi
 read -p "Enter your age:" uage
 if [ $uage -ge 18 ]
 then
-        echo "You can vote and drive with lecense."
+        echo "You can vote and drive with license."
 elif [ $uage -ge 16 ] && [ $uage -le 18 ]
 then
         echo "You cannot vote but drive with learning license."
 else
         echo "You are under age. You cannot drive or vote."
 fi
+
+# File realted examples for conditional statements
+echo -e "Enter name of the file : \c "  # \c is used to stay in the same line. -e is used to make use of the \c.
+read file_name
+if [ -e $file_name ]  #-e flag is used to checck if the file exist or not
+then
+        echo " $file_name found "
+else
+        echo " $file_name does not exist "
+fi
+
+#-f flag is used to check if file exist and if it is a regular file or not
+#-d flag is used for directory
+#-b flag is used to check if it is block special file
+#-c flag is used if it is character special file
+#-s flag is usd to check if the file is empty
