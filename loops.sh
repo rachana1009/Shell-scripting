@@ -58,3 +58,45 @@ do
 echo "$num is greater than 10"
 num=$(( num-1 ))
 done
+
+
+####### FOR LOOP ########
+# Syntax 
+# 1.
+# for variable in {1,2,....}
+# do
+# Conditions
+# done
+
+# 2.
+# for variable in file1 file2..
+# do
+# commands
+# done
+
+# 3.
+# for OUTPUT in $(linux-or-unix-command-here)
+# do
+# command1 on $OUTPUT
+# command2 on $OUTPUT 
+# done 
+
+# 4.
+# for (( exp1; exp2; exp3))
+# do
+# commands
+# done
+
+echo "FOR LOOP"
+# example 
+for command in ls pwd date
+do
+echo "------- $command ---------"
+$command
+done
+
+# 2. 
+for (( i=0; i<=5 ; i++))
+do
+echo $i
+done
