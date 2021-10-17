@@ -100,3 +100,19 @@ for (( i=0; i<=5 ; i++))
 do
 echo $i
 done
+
+
+
+########## SELECT LOOP ########
+# Syntax:
+# select varname in list
+# do 
+# commands
+# done
+
+# Example
+echo " SELECT LOOP"
+select name in rachana rachel rohan ben tom
+do
+echo "$name Selected"
+done
