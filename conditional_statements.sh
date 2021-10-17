@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-#There are three types of Conditional statements
+#There are four types of Conditional statements
 
 #1. If-statement
 #Synatx:
@@ -65,6 +65,46 @@ then
 else
         echo "You are under age. You cannot drive or vote."
 fi
+
+
+#4. Switch statement(Case)
+# Synatx:
+
+# case expression in
+#    pattern1 )
+#      statements ;;
+#    pattern2 )
+#     statements ;;
+#    pattern n )
+#      statements ;;
+# esac
+
+#Example:
+
+echo -e "Enter any number[1-7]: \c"
+read value
+case $value in
+"1" )
+echo "It is Monday." ;;
+"2" ) 
+echo "It is Tuesday" ;;
+"3" )
+echo "It is Wednesday" ;;
+"4" ) 
+echo "It is Thursday" ;;
+"5" ) 
+echo "It is Friday" ;;
+"6" )
+echo "It is Saturday" ;;
+"7" ) 
+echo "It is Sunday" ;;
+*)
+echo "Incorrect input";;
+esac
+
+
+
+
 
 # File realted examples for conditional statements
 echo -e "Enter name of the file : \c "  # \c is used to stay in the same line. -e is used to make use of the \c.
