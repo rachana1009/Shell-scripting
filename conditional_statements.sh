@@ -81,3 +81,35 @@ fi
 #-b flag is used to check if it is block special file
 #-c flag is used if it is character special file
 #-s flag is usd to check if the file is empty
+
+
+echo -e "Enter name of the file : \c "  # \c is used to stay in the same line. -e is used to make use of the \c.
+read file_namee
+if [ -f $file_namee ]   #-e flag is used to checck if the file exist or not
+then
+        echo "It is a regular file"
+else
+        echo "It is not a regular file"
+fi
+
+echo -e "Enter any directory: \c"
+read direc
+if [ -d $direc ]
+then
+        echo "It is a directory"
+elif [ -f $direc ]
+then
+        echo "It is not a directory, it is a file"
+else
+        echo "It is neither a directory nor a file"
+fi
+
+
+echo -e "Enter the name of the file: \c "
+read fname
+if [ -s $fname ]
+then
+        echo "File is empty "
+else
+        echo "File is not empty"
+fi
