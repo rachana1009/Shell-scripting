@@ -27,3 +27,16 @@ echo "$n"
 n=$(( n+1 ))
 done
 
+#Read content in Bash
+
+while read p
+do 
+echo $p
+done <basics.sh
+
+# second way to read
+cat basics.sh | while read popddo
+echo $p
+done
+
+
