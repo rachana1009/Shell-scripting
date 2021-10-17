@@ -35,8 +35,26 @@ echo $p
 done <basics.sh
 
 # second way to read
-cat basics.sh | while read popddo
+cat basics.sh | while read p 
+do
 echo $p
 done
 
 
+
+
+######### UNTIL LOOP ########
+# Syntax:
+# until [ condition ]
+# do
+# commands
+# done
+
+echo "Until loop"
+
+read -p "Enter a number:" num
+until [ $num -le 10 ]
+do
+echo "$num is greater than 10"
+num=$(( num-1 ))
+done
