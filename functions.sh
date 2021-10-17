@@ -24,4 +24,10 @@ quit()
 }
 
 hello
-quit
+
+## passing arguments to the function
+function print ()
+{
+    echo $1 $2
+}
+print am Rachana
